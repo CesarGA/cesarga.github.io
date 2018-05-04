@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  workspace:
+    image: node:10-slim
+    volumes:
+      - ./:/home/node/app
+    working_dir: /home/node/app
+    ports:
+      - '8080:8080'
+      - '8081:8081'
+    stdin_open: true
+    tty: true

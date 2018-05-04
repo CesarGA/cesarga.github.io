@@ -1,0 +1,19 @@
+{
+  "name": "cesar.d3riva.com",
+  "version": "0.0.1",
+  "description": "Work blog",
+  "main": "index.html",
+  "repository": "https://github.com/CesarGA/cesarga.github.io.git",
+  "author": "César García Acebal",
+  "license": "MIT",
+  "devDependencies": {
+    "highlight.js": "^9.12.0",
+    "mobi.css": "^3.1.1",
+    "prismjs": "^1.14.0",
+    "vuepress": "^0.8.4"
+  },
+  "scripts": {
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog && ./github-pages.sh"
+  }
+}
