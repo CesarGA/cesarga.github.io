@@ -9,11 +9,15 @@
   "devDependencies": {
     "highlight.js": "^9.12.0",
     "mobi.css": "^3.1.1",
+    "node-sass": "^4.9.0",
     "prismjs": "^1.14.0",
+    "sass-loader": "^7.0.1",
+    "vue": "^2.5.16",
     "vuepress": "^0.8.4"
   },
   "scripts": {
     "dev": "vuepress dev blog",
-    "build": "vuepress build blog && ./github-pages.sh"
+    "build": "vuepress build blog",
+    "deploy": "gh-pages --dist dist --branch master"
   }
 }
